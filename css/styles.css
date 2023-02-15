@@ -10,6 +10,8 @@
   --grey-border: #8e8f99;
   --hover-icons-footer: #31d0aa;
   --bg-icons-footer: rgba(255, 255, 255, 0.1);
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
 }
 /* utulities */
 .link {
@@ -87,6 +89,9 @@ body {
   padding-bottom: 24px;
   font-weight: 500;
   color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 
 .nav-link:hover,
@@ -112,6 +117,9 @@ body {
   color: var(--primary-text-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .addr-link:hover,
 .addr-link:focus {
@@ -164,6 +172,9 @@ body {
   border-radius: 4px;
   margin-top: 48px;
   border: none;
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .button-order:hover,
 .button-order:focus {
@@ -264,6 +275,9 @@ body {
   height: 40px;
   border-radius: 50%;
   background: var(--logo-and-button-color);
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .team-icons:hover,
 .team-icons:focus {
@@ -299,6 +313,9 @@ body {
   border: 1px solid var(--grey-border);
   border-radius: 4px;
   fill: var(--grey-border);
+  transition-property: fill, border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -346,6 +363,9 @@ body {
   border-radius: 50%;
   background: var(--bg-icons-footer);
   margin-top: 16px;
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .social-items:hover,
 .social-items:focus {
@@ -377,6 +397,9 @@ body {
   color: var(--logo-and-button-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  transition-property: background, color, border, box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -408,6 +431,9 @@ body {
 }
 .thumb {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .thumb:hover,
 .thumb:focus {
