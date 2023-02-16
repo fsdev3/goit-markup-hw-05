@@ -12,6 +12,7 @@
   --bg-icons-footer: rgba(255, 255, 255, 0.1);
   --timing: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
+  --modal-bg: #fcfcfc;
 }
 /* utulities */
 .link {
@@ -200,9 +201,9 @@ body {
   width: 408px;
   height: 576px;
   left: 50%;
-  top: 42.5%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background: #fcfcfc;
+  background: var(--modal-bg);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -212,6 +213,21 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+.btn-close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: 0;
+  padding: 0;
+  background: var(--modal-bg);
+  /* transition-duration: 2000ms;
+  transition-timing-function: var(--timing); */
+}
+.ico-close {
+  width: 24px;
+  height: 24px;
+}
+
 /* section feature */
 
 .section {
