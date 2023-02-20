@@ -223,8 +223,9 @@ body {
   background: #e7e9fc;
   border: 1px solid var(--icon-modal);
   border-radius: 50%;
+  padding: 1px 7px 2px 7px;
 }
-.ico-close {
+.ico-btn {
   width: 8px;
   height: 8px;
 }
